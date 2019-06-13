@@ -1,0 +1,4 @@
+{
+	"username": "co2sensor",
+	"password": "PASSWORD"
+}
