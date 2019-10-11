@@ -37,7 +37,7 @@ class Mqtt:
         self.connected = True
 
 cfg = loads(open("co2auth.txt").read())
-m = Mqtt("192.168.178.20", 1883, 60, user=cfg["username"], pw=cfg["password"])
+m = Mqtt("mqtt.intern.k4cg.org", 1883, 60, user=cfg["username"], pw=cfg["password"])
 sensor = CO2Meter("/dev/hidraw0")
 
 while not m.connected:
